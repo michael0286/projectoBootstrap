@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Guía Hoteles</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page" >
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ol>
+        </nav>
+        <h1>Deja un Comentario</h1>
+        <form action="#">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre">   
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingrese su direccion">   
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select class="form-control" name="privincia" id="privincia">
+                        <option selected>Capital Federal</option>
+                        <option selected>Buenos Aires</option>
+                        <option selected>Córdoba</option>
+                        <option selected>Santa Fé</option>
+                        <option selected>Mendoza</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" class="form-control" rows="10" placeholder="Ingresa tu comentario"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quiero que me contacten
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="col-sm-4 d-flex flex-column text-center">
+                <a href="#">Facebook</a>
+                <a href="#">X</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <address>
+                    Boulevard Morazán, Honduras,
+                    +504 3333-4444,
+                    contacto@hoteles.com
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column text-center">
+                <a href="#">Nosotros</a>
+                <a href="#">Precios</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

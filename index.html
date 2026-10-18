@@ -8,10 +8,28 @@
     <title>Guía Hoteles</title>
 </head>
 <body>
-    <div class="jumbotron d-flex align-items-center">
-        <h1 class="ms-3">Hoteles</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
     </div>
-    <div class="container d-flex align-items-center justify-content-center container-1">
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page" >
+                    <a href="./index.html">Home</a>
+                </li>
+            </ol>
+        </nav>
         <div class="d-flex text-center">
             <div class="col-sm-4">
                 <p>
@@ -34,12 +52,15 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="container d-flex align-items-center justify-content-center container-2">
         <div class="d-flex flex-wrap flex-row-reverse">
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Barcelona</h4>
-                    <p>Hotel ubicado en pleno centro
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+            <img class="card-img-top" src="img/joao-emanuel-0ppqZpWTkXE-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <h6 class="card-subtitle text-muted">España</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro
                         de Barcelona a pocos metros de la playa
                     </p>
                 </div>
@@ -47,28 +68,34 @@
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Buenos Aires</h4>
-                    <p>Hotel ubicado en pleno centro</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/dean-zhang-1EL9yeKl6fY-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h6 class="card-subtitle text-muted">Argentina</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Lima</h4>
-                    <p>Hotel ubicado en pleno centro</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/andraes-arteaga-7FweK4uGEX4-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Lima</h5>
+                    <h6 class="card-subtitle text-muted">Perú</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Rio de Janeiro</h4>
-                    <p>Hotel ubicado en pleno centro de Rio de Janeiro
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/dylan-calluy-teaMcALMtto-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro
                        a pocos metros de la playa
                     </p>
                 </div>
@@ -76,28 +103,65 @@
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div> 
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel La paz</h4>
-                    <p>Hotel ubicado en pleno centro</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/egor-myznik-utPa17sA0l8-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel La paz</h5>
+                    <h6 class="card-subtitle text-muted">Bolivia</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Madrid</h4>
-                    <p>Hotel ubicado en pleno centro</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Madrid</h5>
+                    <h6 class="card-subtitle text-muted">España</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/kelsey-curtis--27u_GzlAFw-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
+                </div>
                 <div>
-                    <h4>Hotel San Pablo</h4>
-                    <p>Hotel ubicado en pleno centro</p>
+                    <button class="btn btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/linus-mimietz-p3UWyaujtQo-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-reserva">Reservar</button>
+                </div>
+            </div><div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/robert-visual-diary-lstt3exjBr8-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-reserva">Reservar</button>
+                </div>
+            </div><div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <img class="card-img-top" src="img/maria-orlova-6viJObrmnBw-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h6 class="card-subtitle text-muted">Brasil</h6>
+                    <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
