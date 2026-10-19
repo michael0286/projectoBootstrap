@@ -222,7 +222,7 @@
                     <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con paquete de aventura!">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto" id="contactoBtn">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -287,6 +287,27 @@
         $(function (){
             $("[data-toggle='tooltip']").tooltip();
             $("[data-toggle='popover']").popover();
+
+            $('#contacto').on('show.bs.modal', function (e) {
+                console.log('El modal se está mostrando');
+
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+
+            });
+            $('#contacto').on('shown.bs.modal', function (e) {
+                console.log('El modal se mostró');
+            });
+
+            $('#contacto').on('hide.bs.modal', function (e) {
+                console.log('El modal se está ocultando');
+            });
+
+            $('#contacto').on('hidden.bs.modal', function (e) {
+                console.log('El modal se ocultó');
+            });
+
 
         });
     </script>
