@@ -8,8 +8,8 @@
     <title>Guía Hoteles</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
-        <a class="navbar-brand" href="#">Hoteles</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+        <a class="navbar-brand" href="./index.html">Hoteles</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,39 +30,91 @@
                 </li>
             </ol>
         </nav>
-        <div class="d-flex text-center">
+        
+        <div class="row">
             <div class="col-sm-4">
-                <p>
+                <button class="btn btn-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#funciona"
+                    aria-expanded="false" aria-controls="funciona">
+                    ¿Cómo funciona?
+                </button>
+            </div>
+
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#reserva"
+                    aria-expanded="false" aria-controls="reserva">
+                    ¿Dónde puedo reservar?
+                </button>
+            </div>
+
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#pago"
+                    aria-expanded="false" aria-controls="pago">
+                    ¿Cómo pago?
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                <div class="collapse" id="funciona">
                     <h3>¿Cómo funciona?</h3>
-                    <p>Busca los hoteles de acuerdo a tu preferencia</p>
-                </p>
+                    <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+                </div>
             </div>
+
             <div class="col-sm-4">
-                <p>
-                    <h3>¿Dónde Puedo Reservar?</h3>
-                    <p>Eelegí la ciudad que te interese y 
-                        luego realizá la reserva con tus datos</p>
-                </p>
+                <div class="collapse" id="reserva">
+                    <h3>¿Dónde puedo reservar?</h3>
+                    <p>Elegí la ciudad que te interese y luego realizá
+                        la reserva con tus datos.</p>
+                </div>
             </div>
+
             <div class="col-sm-4">
-                <p>
+                <div class="collapse" id="pago">
                     <h3>¿Cómo pago?</h3>
-                    <p>Utilizá tu tarjeta favorita</p>
-                </p>
+                    <p>Utilizá tu tarjeta favorita.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-img">
+                        <img src="img/car1.jpg" class="d-block w-100" alt="Primera imagen de hotel">
+                    </div>
+                    <div class="carousel-item carousel-img">
+                        <img src="img/car2.jpg" class="d-block w-100" alt="Segunda imagen de hotel">
+                    </div>
+                    <div class="carousel-item carousel-img">
+                        <img src="img/car3.jpg" class="d-block w-100" alt="Tercera imagen de hotel">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
         </div>
     </div>
     <hr>
     <div class="container d-flex align-items-center justify-content-center container-2">
-        <div class="d-flex flex-wrap flex-row-reverse">
+        <div class="d-flex flex-wrap">
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
             <img class="card-img-top" src="img/joao-emanuel-0ppqZpWTkXE-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con descuento!">Hotel Barcelona</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Hotel ubicado en pleno centro
                         de Barcelona a pocos metros de la playa
                     </p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -71,9 +123,10 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/dean-zhang-1EL9yeKl6fY-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con clases de tango gratuitas!">Hotel Buenos Aires</h5>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -81,10 +134,11 @@
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/andraes-arteaga-7FweK4uGEX4-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
-                <div class="card-body">
+                <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con desayuno gratuito!">
                     <h5 class="card-title">Hotel Lima</h5>
                     <h6 class="card-subtitle text-muted">Perú</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -93,11 +147,12 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/dylan-calluy-teaMcALMtto-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan piscina!">Hotel Rio de Janeiro</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro
                        a pocos metros de la playa
                     </p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -105,10 +160,11 @@
             </div> 
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/egor-myznik-utPa17sA0l8-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
-                <div class="card-body">
-                    <h5 class="card-title">Hotel La paz</h5>
+                <div class="card-body" >
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con clases de tango gratuitas!">Hotel La paz</h5>
                     <h6 class="card-subtitle text-muted">Bolivia</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -117,9 +173,10 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Madrid</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con 3 comidas gratuitas!">Hotel Madrid</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -128,9 +185,10 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/kelsey-curtis--27u_GzlAFw-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con acceso a la piscina!">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -139,9 +197,10 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/linus-mimietz-p3UWyaujtQo-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con clases de tango gratuitas!">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -149,9 +208,10 @@
             </div><div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/robert-visual-diary-lstt3exjBr8-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con desayuno gratuito!">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
@@ -159,14 +219,43 @@
             </div><div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="img/maria-orlova-6viJObrmnBw-unsplash.jpg" alt="Imagen de una habitación de Hotel" class="img-fluid">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel San Pablo</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Las primeras reservas cuentan con paquete de aventura!">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-reserva">Reservar</button>
                 </div>
             </div>
+        </div>
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleMOdalLabel">Contacto con el hotel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer>
@@ -194,5 +283,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function (){
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+
+        });
+    </script>
 </body>
 </html>
