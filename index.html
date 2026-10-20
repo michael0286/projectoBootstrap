@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
     <title>Guía Hoteles</title>
 </head>
 <body>
@@ -280,8 +283,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- build:css dist/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(function (){
@@ -307,9 +312,9 @@
             $('#contacto').on('hidden.bs.modal', function (e) {
                 console.log('El modal se ocultó');
             });
-
-
+            
         });
     </script>
+    <!-- endbuild -->
 </body>
 </html>
